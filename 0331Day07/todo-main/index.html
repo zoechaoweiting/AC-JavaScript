@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        display: inline-block;
+        background-color: #ccc;
+        padding: 0 4px;
+        margin-right: 10px;
+        margin-bottom: 2px;
+        cursor: pointer;
+      }
+      div {
+        display: inline-block;
+        background-color: #ccc;
+        padding: 0 4px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+    </style>
+    <script src="app.js" defer type="module"></script>
+  </head>
+  <body>
+    <form class="form">
+      Email: <input type="email" name="email" id="email" /><br />
+      Nickname: <input type="text" name="nickname" id="nickname" /><br />
+      Password:
+      <input type="password" name="password" id="password" /><br />
+      <input type="submit" value="註冊" id="btn" />
+    </form>
+    <hr />
+    <form class="login_form">
+      Email: <input type="email" name="email" id="login_email" /><br />
+      Password:
+      <input type="password" name="password" id="login_password" /><br />
+      <input type="submit" value="登入" id="login_btn" />
+    </form>
+    <textarea class="token"></textarea>
+    <hr />
+    <form id="checkForm">
+      <button id="checkBtn">檢查登入</button>
+      <p id="result"></p>
+    </form>
+    <hr />
+    <form id="logoutForm">
+      <button id="logutBtn">登出</button>
+    </form>
+    <hr />
+    <form id="todoForm">
+      <input type="text" id="todo" />
+      <button id="todoBtn">送出</button>
+    </form>
+    <ul id="ul"></ul>
+  </body>
+</html>
